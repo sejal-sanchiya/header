@@ -1,24 +1,28 @@
  .container-fluid{
-    font-size: 35px;
+    font-size: 25px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     background: #5697b4;
-    height: 40px;
+    height: 55px;
 } 
 .space a{ 
     border: 1px;
     text-decoration: none;
     color:white;
-    
+    padding-top: 15px;
 }
 
-a:active{
+/* a:active{
     background:#e35883;
     color: aliceblue;
-  
-}
-
+} */
+.is-active{
+ 
+        background:#e35883;
+        color: aliceblue;
+    
+} 
 .space{
     display: flex;
     justify-content: space-between;
@@ -37,9 +41,9 @@ body {
 } 
 
 .box{
-  
-    height:50px;
-    width: 150px;
+    font-size:20px;
+    height:100px;
+    width: 90px;
     background:#9dbfcf;
     color: aliceblue;
 }

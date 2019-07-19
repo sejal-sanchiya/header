@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="page.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
     <div id="app" class="aaa">
         <div class="container-fluid">   
-            <div class="space" v-for="link in links">
-                <a href="#"  @click="choose(link)" >{{ link.name }}</a>
+            <div class="space" v-for="link in links" >
+                <a  :class="{'is-active': selected == link' }" href="#"  @click="choose(link)">{{ link.name }}</a>
             </div> 
        </div>
+ 
        <div class="display">
-         you choose :
+         you choose :<span class="box">{{ selected.name }} </span>
+        </div>
+     
 
-                 <span class="box">{{ selected.name }} </span>
-           
-       </div>
     </div> 
    <script src="page.js"></script>
  

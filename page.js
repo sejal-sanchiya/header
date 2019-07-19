@@ -6,15 +6,17 @@ var app = new Vue({
         {id:'2',name: 'PROJECTS'},
         {id:'3',name: 'SERVICIES'},
         {id:'4',name: 'CONTACT'},
-         
+         {}
     ],
-    selected:''
+    selected:'',
+    isActive:''
 },
     methods: {
         
         choose(a) {
-               this.selected = a
-        }  
+            this.selected = a
+            
+        },       
     } 
 
 }); 
