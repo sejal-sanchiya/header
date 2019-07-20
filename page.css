@@ -1,49 +1,44 @@
- .container-fluid{
+ .container{
     font-size: 25px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     background: #5697b4;
-    height: 55px;
-} 
-.space a{ 
-    border: 1px;
-    text-decoration: none;
-    color:white;
-    padding-top: 15px;
+    height: 70px;
+    position: relative;
 }
 
-/* a:active{
+.is-active{
     background:#e35883;
     color: aliceblue;
-} */
-.is-active{
- 
-        background:#e35883;
-        color: aliceblue;
-    
+    text-decoration: none;
 } 
-.space{
-    display: flex;
-    justify-content: space-between;
-   
-}
 
 body {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    padding: 0;
+    margin: 0;
 }
 
 .display{
-    text-align: center;
     font-size: 25px;
-    padding: 80px;
-} 
+    text-align: center;
+    padding-top: 50px;
+}    
 
-.box{
-    font-size:20px;
-    height:100px;
-    width: 90px;
-    background:#9dbfcf;
-    color: aliceblue;
+.menu-list{
+    list-style-type: none;
+    padding: 0;
 }
+.menu-items a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    width: auto;
+    padding: 30px 15px 18px 15px;
+}
+.box{
+    background: #abc4cf;
+    /* padding: 20px 15px 18px 15px; */
+}
+

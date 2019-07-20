@@ -9,19 +9,29 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    <div id="app" class="aaa">
+    <!-- <div id="app" class="aaa">
         <div class="container-fluid">   
             <div class="space" v-for="link in links" >
-                <a  :class="{'is-active': selected == link' }" href="#"  @click="choose(link)">{{ link.name }}</a>
+                <a  :class="{'is-active': selected === link }" href="#"  @click="choose(link)">{{ link.name }}</a>
             </div> 
        </div>
  
-       <div class="display">
-         you choose :<span class="box">{{ selected.name }} </span>
+      -->
+        <div id="app">
+            <div class="container">
+               
+                <ul class="menu-list" v-for="link in links">
+                    <li class= "menu-items">  <a  :class="{'is-active': selected === link }" href="#"  @click="choose(link)">{{ link.name }}</a></li>
+                </ul>
+            </div>
+                <div class="display">
+                        you choose :<span class="box">{{ selected.name }} </span>
+                </div>
+            
+            
         </div>
-     
 
-    </div> 
+    
    <script src="page.js"></script>
  
 </body>
